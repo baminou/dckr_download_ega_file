@@ -66,7 +66,7 @@ def main():
 		print str(err)
 		if os.path.isfile(file_list):
 			os.remove(file_list)
-		exit(1)
+		raise Exception(str(err))
 
 
 
