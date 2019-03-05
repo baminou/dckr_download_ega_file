@@ -48,7 +48,7 @@ def main():
 
 		# Raise an error if the output file exists
 		if os.path.isfile(results.output):
-			raise ValueError("Output file already exists")
+			raise ValueError("Output file %s already exists" % (results.output))
 
 		# Write the file to be downloaded to the temporary file
 		with open(file_list, 'w') as f:
